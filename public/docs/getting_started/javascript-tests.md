@@ -127,7 +127,7 @@ contract('2nd MetaCoin test', async (accounts) => {
      let instance = await MetaCoin.deployed();
      let balance = await instance.getBalance.call(accounts[0]);
      assert.equal(balance.valueOf(), 10000);
-  })
+  });
   
   it("should call a function that depends on a linked library", async () => {
     let meta = await MetaCoin.deployed();
